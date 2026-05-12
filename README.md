@@ -58,3 +58,7 @@ Return ONLY valid JSON in this format:
   "total_amount": "15.90",
   "currency": "MYR"
 }
+
+##  Home Page
+
+![Home Page](/Users/farhana/Desktop/Receipt-ai-app.png)
