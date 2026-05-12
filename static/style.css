@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #fdfbfb, #ebedee);
+    overflow: hidden;
+    position: relative;
+}
+
+/* Background shapes */
+.background-shape {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(70px);
+    z-index: 0;
+}
+
+.shape1 {
+    width: 300px;
+    height: 300px;
+    background: #c7d2fe;
+    top: -50px;
+    left: -50px;
+}
+
+.shape2 {
+    width: 350px;
+    height: 350px;
+    background: #bfdbfe;
+    bottom: -80px;
+    right: -80px;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    z-index: 1;
+}
+
+/* Card */
+.card {
+    width: 100%;
+    max-width: 580px;
+    max-height: 92vh;
+    overflow: hidden;
+
+    background: rgba(255,255,255,0.75);
+    border: 1px solid rgba(255,255,255,0.6);
+    border-radius: 30px;
+    padding: 25px;
+
+    backdrop-filter: blur(18px);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+    animation: fadeIn 0.8s ease;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Top section */
+.top-section {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.icon-box {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #60a5fa, #818cf8);
+    margin: auto;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    color: white;
+    margin-bottom: 15px;
+    box-shadow: 0 10px 25px rgba(96,165,250,0.3);
+    animation: float 3s infinite ease-in-out;
+}
+
+h1 {
+    font-size: 28px;
+    color: #111827;
+    margin-bottom: 6px;
+}
+
+p {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+/* Upload area */
+.upload-area {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.upload-box {
+    background: #ffffff;
+    border: 2px dashed #cbd5e1;
+    border-radius: 22px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s ease;
+    color: #4b5563;
+}
+
+.upload-box:hover {
+    transform: translateY(-3px);
+    border-color: #60a5fa;
+    box-shadow: 0 10px 25px rgba(96,165,250,0.15);
+}
+
+.upload-box i {
+    font-size: 38px;
+    color: #60a5fa;
+    margin-bottom: 10px;
+}
+
+/* Buttons */
+.extract-btn,
+.save-btn {
+    border: none;
+    padding: 12px;
+    border-radius: 16px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-weight: 600;
+}
+
+.extract-btn {
+    background: linear-gradient(135deg, #60a5fa, #818cf8);
+    color: white;
+}
+
+.save-btn {
+    background: linear-gradient(135deg, #34d399, #10b981);
+    color: white;
+    margin-top: 8px;
+}
+
+.extract-btn:hover,
+.save-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Status */
+.status-box {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#status {
+    color: #2563eb;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+/* Form */
+.form-section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    margin-bottom: 6px;
+    color: #374151;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.input-group input {
+    padding: 12px;
+    border-radius: 16px;
+    border: 1px solid #e5e7eb;
+    background: white;
+    outline: none;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #60a5fa;
+    box-shadow: 0 0 0 4px rgba(96,165,250,0.15);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-6px); }
+    100% { transform: translateY(0px); }
+}
