@@ -60,4 +60,4 @@ Return ONLY valid JSON in this format:
 }
 
 ## Screenshot of the Web
-! [image alt] (https://github.com/FarhanaAdnin/receipt-ai-app/blob/00b210b0b6cb2b4b55983d337e597863a6bd4863/screenshot.png)
+![Receipt AI Web App Screenshot](https://raw.githubusercontent.com/FarhanaAdnin/receipt-ai-app/main/screenshot.png)
