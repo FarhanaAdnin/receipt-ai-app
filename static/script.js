@@ -40,13 +40,13 @@ function submitForm() {
 
     document.getElementById("status").innerText = "Receipt data saved successfully!";
 
-    // ✅ Clear all form fields after submit
+  
     document.getElementById("merchant").value = "";
     document.getElementById("date").value = "";
     document.getElementById("total").value = "";
     document.getElementById("currency").value = "";
 
-    // ✅ Clear uploaded file
+    
     document.getElementById("receipt").value = "";
 }
 
