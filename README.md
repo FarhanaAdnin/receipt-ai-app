@@ -59,3 +59,5 @@ Return ONLY valid JSON in this format:
   "currency": "MYR"
 }
 
+## Screenshot of the Web
+! [image alt] (https://github.com/FarhanaAdnin/receipt-ai-app/blob/00b210b0b6cb2b4b55983d337e597863a6bd4863/screenshot.png)
