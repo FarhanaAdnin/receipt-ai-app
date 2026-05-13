@@ -51,13 +51,5 @@ Return ONLY valid JSON in this format:
   "currency": ""
 }
 
-## Ouput Example
-{
-  "merchant_name": "Starbucks",
-  "date": "2026-05-12",
-  "total_amount": "15.90",
-  "currency": "MYR"
-}
-
 ## Screenshot of the Web
 ![Receipt AI Web App Screenshot](https://raw.githubusercontent.com/FarhanaAdnin/receipt-ai-app/main/screenshot.png)
